@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import Cards from './components/Cards';
-import Contador from './components/Contador';
+
 import './App.css'
 
 function App() {
 
   return (
-    <div className='App'>
+    <div className='App h-200'>
       <Cards />
-      <Contador />
     </div>
   )
 }
