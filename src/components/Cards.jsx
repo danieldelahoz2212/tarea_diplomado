@@ -14,63 +14,63 @@ const CardsAndCounter = () => {
 
   return (
     <>
-    <div className='container'>
-      <div className='row'>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen1}
-            contador={contador}
-            Titulo={'Isla Grande'}
-            Parrafo={'Es una isla bonita con playas que invitan al descanso frente al mar. Para llegar aquí debes comprar tus pasajes de avión hasta Cartagena de Indias y tomar un barco que te situará en el archipiélago de Rosario.'}
-          />
-        </div>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen2}
-            contador={contador}
-            Titulo={'Islote Sucre (Johnny Cay)'}
-            Parrafo={'Una isla encantadora es el Islote Sucre, un pequeño atolón ubicado en la isla de San Andrés. Necesitas acercarte al muelle Portofino de esta isla para tomar una lancha que te lleve a Johnny Cay, como se le conoce internacionalmente.'}
-          />
-        </div>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen3}
-            contador={contador}
-            Titulo={'Isla Malpelo'}
-            Parrafo={'Entre las islas de Colombia que son santuario de fauna y flora se encuentra la Isla de Malpelo. Este paraíso para bucear con los tiburones se ubica del lado del Pacífico colombiano.'}
-          />
-        </div>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen4}
-            contador={contador}
-            Titulo={'Isla Tintipán'}
-            Parrafo={'Esta isla con manglares forma parte de otras diez que conforman el archipiélago de San Bernardo (departamento de Sucre). Para visitarla debes salir desde Cartagena y tomar un autobús a Tolú. El viaje por carretera dura una dos horas.'}
-          />
-        </div>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen5}
-            contador={contador}
-            Titulo={'Isla de la Corota'}
-            Parrafo={'Es una de las más pequeñas islas de Colombia, ya que solo tiene 12 hectáreas. ¡Pero que esto no te engañe! La Isla de la Corota es un santuario de flora y fauna que se encuentra en la Laguna de la Cocha, departamento de Nariño. Esta laguna es la segunda más grande de Colombia.'}
-          />
-        </div>
-        <div className='col mt-3'>
-          <Card
-            Imagen={imagen6}
-            contador={contador}
-            Titulo={'Isla Múcura'}
-            Parrafo={'Esta isla del archipiélago de San Bernardo cuenta con hoteles y áreas destinadas al turismo. Forma parte del Distrito de Cartagena y es un lugar muy tranquilo para tumbarse en la arena, nadar y recargar las baterías.'}
-          />
+      <div className='container d-flex justify-content-between align-items-center'>
+        <div className='row'>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen1}
+              contador={contador}
+              Titulo={'Isla Grande'}
+              Parrafo={'Es una isla bonita con playas que invitan al descanso frente al mar. Para llegar aquí debes comprar tus pasajes de avión hasta Cartagena de Indias y tomar un barco que te situará en el archipiélago de Rosario.'}
+            />
+          </div>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen2}
+              contador={contador}
+              Titulo={'Islote Sucre (Johnny Cay)'}
+              Parrafo={'Una isla encantadora es el Islote Sucre, un pequeño atolón ubicado en la isla de San Andrés. Necesitas acercarte al muelle Portofino de esta isla para tomar una lancha que te lleve a Johnny Cay, como se le conoce internacionalmente.'}
+            />
+          </div>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen3}
+              contador={contador}
+              Titulo={'Isla Malpelo'}
+              Parrafo={'Entre las islas de Colombia que son santuario de fauna y flora se encuentra la Isla de Malpelo. Este paraíso para bucear con los tiburones se ubica del lado del Pacífico colombiano.'}
+            />
+          </div>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen4}
+              contador={contador}
+              Titulo={'Isla Tintipán'}
+              Parrafo={'Esta isla con manglares forma parte de otras diez que conforman el archipiélago de San Bernardo (departamento de Sucre). Para visitarla debes salir desde Cartagena y tomar un autobús a Tolú. El viaje por carretera dura una dos horas.'}
+            />
+          </div>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen5}
+              contador={contador}
+              Titulo={'Isla de la Corota'}
+              Parrafo={'Es una de las más pequeñas islas de Colombia, ya que solo tiene 12 hectáreas. ¡Pero que esto no te engañe! La Isla de la Corota es un santuario de flora y fauna que se encuentra en la Laguna de la Cocha, departamento de Nariño. Esta laguna es la segunda más grande de Colombia.'}
+            />
+          </div>
+          <div className='col mt-3'>
+            <Card
+              Imagen={imagen6}
+              contador={contador}
+              Titulo={'Isla Múcura'}
+              Parrafo={'Esta isla del archipiélago de San Bernardo cuenta con hoteles y áreas destinadas al turismo. Forma parte del Distrito de Cartagena y es un lugar muy tranquilo para tumbarse en la arena, nadar y recargar las baterías.'}
+            />
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div className='mt-4'>
-      <Contador contador={contador} aumentar={aumentar} disminuir={disminuir} restaurar={restaurar} />
-    </div>
-  </>  
+      
+      <div className='mt-3'>
+        <Contador contador={contador} aumentar={aumentar} disminuir={disminuir} restaurar={restaurar} />
+      </div>
+    </>
   );
 }
 
